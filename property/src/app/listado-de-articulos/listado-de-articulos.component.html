@@ -1,0 +1,21 @@
+<table border="1">
+    <tr>
+        <th>PRODUCTO</th>
+        <th>TIPO</th>        
+        <th>VALOR</th>
+    </tr>
+    <tr *ngFor="let canast of canasta">
+    <td>{{canast.producto}}</td>
+    <td>{{canast.tipo}}</td>
+    <td>{{canast.valor}}</td>
+    </tr>
+
+</table>
+
+<!-- nota: por ayuda de el ChatGPT encontré el elemento "TH" y se dice que es 
+funcional siempre cuando sea hijo del "TD", es decir, este solo funcionará cuando
+el "TD" se encuentre presente sirve como encabezado para las
+tablas, y básicamente pude darme por enterado que su función como encabezado
+hace que el texto caracterizador como "producto, tipo y valor, se vean como 
+si obtuviesen un estilo "negrilla" por defecto. Aún me cuesta esto, se como
+los conceptos, pero digamos éste PropertyBinding tiene ahí un poco de complejidad. -->
